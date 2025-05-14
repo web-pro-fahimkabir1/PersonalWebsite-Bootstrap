@@ -1,0 +1,164 @@
+.contain{
+    background-color: #F5FCFF;
+    padding: 50px;
+    
+}
+span{
+    color: rgb(131, 3, 250);
+}
+h2{
+    font-size: 40px;
+}
+
+.card-body{
+    background-color: #F5FCFF;
+}
+a{
+    text-decoration: none;
+    color:black:
+}
+
+/* animation css start*/
+
+  .demo2:hover {
+    animation: move;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(-400px);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+
+  /* animation css end*/
+  .demo1{
+    animation: move;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(-400px);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+ /* animation card */
+
+/* button animation */
+
+  .pulser {
+    width: 140px;
+    height: 60px;
+    background: rebeccapurple;
+    border-radius: 5px;
+    position: relative;
+    color: #F5FCFF;
+  }
+  
+  .pulser::after {
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.4;
+    }
+  }
+  
+  .pulser::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #5E3BEE;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  /* animation text */
+
+  .card {
+    animation-duration: 14s;
+    animation-name: slide-in;
+   
+  }
+  
+  @keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+  h2{
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-direction: reverse;
+   
+  }
+  
+  @keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+ /* animation img */
+  .element {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F5FCFF;
+    animation-name: stretch;
+    animation-duration: 6s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: #F5FCFF;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: #F5FCFF;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: #F5FCFF;
+    }
+  }
+  
+  
